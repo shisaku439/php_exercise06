@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php endif; ?>
 
             <label for="">年齢</label><br>
-            <input type="text" name="message">
+            <input type="number" name="message">
 
         </div>
         <div>
