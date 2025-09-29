@@ -6,7 +6,7 @@ $msg = '';
 
 // methodがPOSTだったら変数に値をセットする
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['message'];
+    $name = $_POST['name'];
     if (!empty($name)) {
         $msg = "私の名前は、{$name}です。";
     }

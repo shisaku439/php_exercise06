@@ -6,7 +6,7 @@ $msg = '';
 
 // methodがPOSTだったら変数に値をセットする
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $age = $_POST['message'];
+    $age = $_POST['age'];
     $msg = "私は{$age}歳です";
 }
 ?>
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div>
             <label for="">年齢</label>
             <br>
-            <input type="number" name="message">
+            <input type="number" name="age">
         </div>
         <div>
             <input type="submit" value="送信">

@@ -9,7 +9,7 @@
 <body>
     <form action="02_result.php" method="post">
         <div>
-            <input type="text" name="message">
+            <input type="text" name="name">
         </div>
         <div>
             <input type="submit" value="送信">
