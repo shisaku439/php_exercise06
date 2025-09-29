@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div>
             <label for="">年齢</label>
             <br>
-            <input type="number" name="age">
+            <input type="text" name="age">
         </div>
         <div>
             <input type="submit" value="送信">

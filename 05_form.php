@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 <body>
     <h1>数字を入力してください</h1>
     <form action="" method="get">
-        <?php if (!empty($err_msg)) : ?>
+        <?php if ($err_msg) : ?>
             <ul>
                 <li><?= $err_msg ?></li>
             </ul>
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <input type="submit" value="送信">
         </div>
     </form>
-    <?php if (!empty($msg)) : ?>
+    <?php if ($msg) : ?>
         <div>
             <?= htmlspecialchars("{$msg}", ENT_QUOTES, 'UTF-8') ?>
         </div>

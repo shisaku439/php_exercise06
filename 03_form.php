@@ -28,14 +28,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>POSTメソッド</h1>
     <form action="" method="post">
         <div>
-            <?php if (!empty($err_msg)): ?>
+            <?php if ($err_msg): ?>
                 <ul>
                     <li><?= $err_msg ?></li>
                 </ul>
             <?php endif; ?>
 
             <label for="">年齢</label><br>
-            <input type="number" name="age">
+            <input type="text" name="age">
 
         </div>
         <div>
