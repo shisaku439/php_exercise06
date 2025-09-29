@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $num3 = filter_input(INPUT_GET, 'num3');
 
     if (is_numeric($num1) && is_numeric($num2) && is_numeric($num3)) {
-        $sum = $num1 + $num2 + $sum3;
+        $sum = $num1 + $num2 + $num3;
         $msg = "合計値は{$sum}です";
     } else {
         $err_msg = "全てに数字を入力してください。";
